@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +11,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,19 +19,77 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  background-image: url('public/assets/iteration-1/home-banner.png');
+  min-height: 100vh;  
+  width: 100%; 
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  column-gap: 0;
+  flex-shrink: 0;
 }
 
-body {
+header img {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+header p {
+  font-family: Satisfy;
+  font-style: regular;
+  font-size: 32px;
+  color: #FDC913;
+  padding-top: 2rem;
   margin: 0;
+}
+
+header h1 {
+  font-family: "Roboto Condensed";
+  font-style: light;
+  font-size: 6rem;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: #FDC913;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn:hover {
+  color: #FDC913;
+  background-color: #FFFFFF;
+}
+
+main {
+  margin: 0 auto;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+
+body {
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -82,6 +145,8 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
